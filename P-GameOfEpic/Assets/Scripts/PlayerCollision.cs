@@ -8,7 +8,7 @@ public class PlayerCollision : MonoBehaviour
 
     void OnCollisionEnter (Collision collisionInfo)
     {
-        if (collisionInfo.collider.name == "Obstacle")  
+        if (collisionInfo.collider.tag == "Obstacles")  
         {
             movement.enabled = false;
         }
